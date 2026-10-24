@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faaiz Ansari - Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+body{background:#0a0a0f;color:#fff;overflow-x:hidden}
+.header{position:sticky;top:0;z-index:100;padding:18px 8%;display:flex;justify-content:space-between;align-items:center;background:rgba(15,15,20,0.9);backdrop-filter:blur(10px);border-bottom:1px solid #222}
+.logo{font-size:26px;font-weight:900} .logo span{color:#7CFFB2}
+.btn{border:1px solid #7CFFB2;padding:10px 22px;border-radius:30px;color:#7CFFB2;font-weight:bold;transition:0.3s;text-decoration:none}
+.btn:hover{background:#7CFFB2;color:#000;transform:scale(1.05)}
+.hero{padding:80px 8%;display:grid;grid-template-columns:1.2fr 0.8fr;gap:30px;align-items:center}
+.hero h1{font-size:58px;line-height:1;animation:slideUp 0.8s ease}
+.hero h2{color:#7CFFB2;margin:12px 0;font-size:22px;animation:slideUp 1s ease}
+.hero p{color:#aaa;animation:slideUp 1.2s ease}
+.badges{margin-top:20px;display:flex;gap:15px;flex-wrap:wrap}
+.badge{border:1px solid #333;padding:8px 14px;border-radius:20px;background:#1a1a22;font-size:14px}
+.projects{padding:50px 8%}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:25px;margin-top:25px}
+.card{background:#15151d;border:1px solid #2a2a35;border-radius:20px;overflow:hidden;transition:0.4s;animation:fadeIn 0.8s ease;position:relative}
+.card:hover{transform:translateY(-10px) scale(1.02);border-color:#7CFFB2;box-shadow:0 20px 40px rgba(124,255,178,0.15)}
+.img-box{height:260px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;border-bottom:1px solid #222}
+.img-box iframe{width:100%;height:100%;border:none;background:#fff}
+.img-box .placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:900;color:#7CFFB2;background:linear-gradient(135deg,#1a1a22,#222)}
+.for-sale{position:absolute;top:12px;left:12px;background:#ff3b3b;color:#fff;padding:5px 12px;border-radius:20px;font-size:12px;font-weight:bold;animation:pulse 2s infinite;z-index:2}
+.card-content{padding:20px}
+.actions{display:flex;gap:10px;margin-top:15px}
+.view{flex:1;background:#222;border:1px solid #444;color:#fff;padding:11px;border-radius:10px;text-align:center;font-weight:bold;text-decoration:none;transition:0.3s}
+.buy{flex:1;background:#7CFFB2;color:#000;padding:11px;border-radius:10px;text-align:center;font-weight:bold;text-decoration:none;transition:0.3s}
+.view:hover{background:#333} .buy:hover{background:#fff;transform:scale(1.05)}
+@keyframes slideUp{from{transform:translateY(50px);opacity:0}to{transform:translateY(0);opacity:1}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}
+@media(max-width:768px){.hero{grid-template-columns:1fr}.hero h1{font-size:40px}}
+</style>
+</head>
+<body>
+
+<div class="header">
+<div class="logo">Faaiz <span>Ansari</span></div>
+<a class="btn" href="https://wa.me/923148454678?text=Assalam-o-Alaikum%20Faaiz%20Bhai" target="_blank">Hire Me</a>
+</div>
+
+<div class="hero">
+<div>
+<h1>Websites That<br>Sell & Shine.</h1>
+<h2>I Build + I Sell Ready Websites</h2>
+<p>Phone / Whatsapp: 03148454678. Neeche di gayi sari websites <b>For Sale</b> hain. Live preview dekh kar Buy kar sakte hain.</p>
+<div class="badges">
+<div class="badge">📍 Hyderabad, PK</div>
+<div class="badge">✅ 3 Live Projects</div>
+<div class="badge">🚀 3 Ready to Sell</div>
+</div>
+</div>
+<div style="background:#15151d;border:1px solid #7CFFB2;border-radius:20px;padding:20px;text-align:center">
+<h3 style="color:#7CFFB2">Available for Freelance</h3>
+<p style="color:#aaa;margin-top:10px;font-size:14px">Click Buy Now & Direct Whatsapp Pe Aao. Full Source Code + Deployment + Support Milega.</p>
+</div>
+</div>
+
+<div class="projects">
+<h2>🔥 Launched & For Sale - Real Live Preview</h2>
+<div class="grid">
+
+<!-- 1 Sellora -->
+<div class="card">
+<div class="img-box"><span class="for-sale">FOR SALE</span><iframe src="https://sellora-pk.netlify.app" loading="lazy"></iframe></div>
+<div class="card-content"><h3>Sellora-pk</h3><p style="color:#aaa;font-size:14px">E-commerce store for local brands.</p><div class="actions"><a class="view" href="https://sellora-pk.netlify.app" target="_blank">View Live</a><a class="buy" href="https://wa.me/923148454678?text=Mujhe%20Sellora-pk%20Buy%20Karni%20Hai" target="_blank">Buy Now</a></div></div>
+</div>
+
+<!-- 2 LifeLearner -->
+<div class="card">
+<div class="img-box"><span class="for-sale">FOR SALE</span><iframe src="https://lifelearnerpk.netlify.app" loading="lazy"></iframe></div>
+<div class="card-content"><h3>LifeLearner PK</h3><p style="color:#aaa;font-size:14px">Online education platform.</p><div class="actions"><a class="view" href="https://lifelearnerpk.netlify.app" target="_blank">View Live</a><a class="buy" href="https://wa.me/923148454678?text=Mujhe%20LifeLearner%20Buy%20Karni%20Hai" target="_blank">Buy Now</a></div></div>
+</div>
+
+<!-- 3 Webfactory - CORRECTED -->
+<div class="card">
+<div class="img-box"><span class="for-sale">FOR SALE</span><iframe src="https://webfactorypk.netlify.app" loading="lazy"></iframe></div>
+<div class="card-content"><h3>Webfactory PK</h3><p style="color:#aaa;font-size:14px">Digital agency website - CORRECT LINK.</p><div class="actions"><a class="view" href="https://webfactorypk.netlify.app" target="_blank">View Live</a><a class="buy" href="https://wa.me/923148454678?text=Mujhe%20WebfactoryPK%20Buy%20Karni%20Hai" target="_blank">Buy Now</a></div></div>
+</div>
+
+</div>
+
+<h2 style="margin-top:60px">🛠️ Ready to Launch - For Sale</h2>
+<div class="grid">
+<div class="card"><div class="img-box"><span class="for-sale" style="background:#7CFFB2;color:#000">READY TO SHIP</span><div class="placeholder">Budget Basics</div></div><div class="card-content"><h3>Budget Basics</h3><p style="color:#aaa;font-size:14px">Personal finance app.</p><div class="actions"><a class="view" href="#">Demo Soon</a><a class="buy" href="https://wa.me/923148454678?text=Budget%20Basics%20Buy%20Karni%20Hai" target="_blank">Buy Now</a></div></div></div>
+<div class="card"><div class="img-box"><span class="for-sale" style="background:#7CFFB2;color:#000">READY TO SHIP</span><div class="placeholder">Family Basket</div></div><div class="card-content"><h3>Family Basket</h3><p style="color:#aaa;font-size:14px">Grocery app for families.</p><div class="actions"><a class="view" href="#">Demo Soon</a><a class="buy" href="https://wa.me/923148454678?text=Family%20Basket%20Buy%20Karni%20Hai" target="_blank">Buy Now</a></div></div></div>
+<div class="card"><div class="img-box"><span class="for-sale" style="background:#7CFFB2;color:#000">READY TO SHIP</span><div class="placeholder">AnimoVerse</div></div><div class="card-content"><h3>AnimoVerse</h3><p style="color:#aaa;font-size:14px">Community for animators.</p><div class="actions"><a class="view" href="#">Demo Soon</a><a class="buy" href="https://wa.me/923148454678?text=AnimoVerse%20Buy%20Karni%20Hai" target="_blank">Buy Now</a></div></div></div>
+</div>
+</div>
+
+<div style="text-align:center;padding:30px;color:#666">© 2026 Faaiz Ansari • 03148454678 • All Websites For Sale</div>
+</body>
+</html>
